@@ -134,8 +134,8 @@ dmypy.json
 */node_modules
 
 #ignore generated protobuf files
-*_pb.js
-*_pb2*.py
-package*.json
+*_pb.js/
+*_pb2*.py/
+package*.json/
 
 
