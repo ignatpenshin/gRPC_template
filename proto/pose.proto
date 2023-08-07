@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service Pose {
+    rpc TakePose(keyframeRequest) returns (keyframeResponse);
+}
+
+
+message keyframeRequest {
+    uint32 id = 1;
+}
+
+message keyframeResponse {
+    string message = 1;
+}
