@@ -11,7 +11,7 @@ class PoseServicer(pose_pb2_grpc.PoseServicer):
     def TakePose(self, request, context):
         print("request: ", request)
         response = pose_pb2.keyframeResponse()
-        response.message = "server_response message!"
+        response.message = f"server_response message! {request}"
         return response
 
 

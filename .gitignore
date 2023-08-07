@@ -1,7 +1,6 @@
 # custom
 typings/
 *.lock
-imu_zed/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -10,6 +9,12 @@ __pycache__/
 
 # C extensions
 *.so
+
+
+#ignore generated protobuf files
+*_pb.js
+*package*.json
+*_pb2*.py
 
 # Distribution / packaging
 .Python
@@ -132,10 +137,4 @@ dmypy.json
 
 # ignore node_modules
 */node_modules
-
-#ignore generated protobuf files
-*_pb.js/
-*_pb2*.py/
-package*.json/
-
 
